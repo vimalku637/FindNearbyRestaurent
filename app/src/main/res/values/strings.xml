@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FindNearbyRestaurant</string>
+    <string name="radius_selector">Radius Selector</string>
+    <string name="_1_km">1 KM</string>
+    <string name="_100_m">100 M</string>
+    <string name="_5_km">5 KM</string>
+    <string name="load_more">Load More</string>
+    <string name="restaurant_placeholder">Restaurant Placeholder</string>
+    <string name="loading">loading</string>
+</resources>
