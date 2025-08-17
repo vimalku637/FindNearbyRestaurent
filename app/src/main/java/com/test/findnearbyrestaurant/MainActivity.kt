@@ -41,7 +41,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     private lateinit var findNearbyRestaurantsAdapter : FindNearbyRestaurantsAdapter
 
-    private val API_KEY = ""// Please add your API Key here to run the app
+//    private val API_KEY = ""// Please add your API Key here to run the app
+    private val API_KEY = "ZOE9c5S19iMlTt2kBa8nkVuRnya7pTfw9d2srzeyWnceY9_HdEB7eVBg6Rgelcm1lWGkejFWTL_n_R_W1rdLIYwEdIQGsfuFX3knVMAFaog7AvhLGKerIZWhVQOeaHYx"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
