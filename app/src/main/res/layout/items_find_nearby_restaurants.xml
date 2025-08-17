@@ -28,6 +28,7 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
             app:layout_constraintStart_toEndOf="@id/img"
             app:layout_constraintEnd_toStartOf="@id/tvRating"
             app:layout_constraintTop_toTopOf="@id/img"
@@ -41,6 +42,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
             app:layout_constraintStart_toStartOf="@id/tvName"
             app:layout_constraintEnd_toEndOf="@id/tvName"
             app:layout_constraintTop_toBottomOf="@id/tvName" />
@@ -52,6 +54,7 @@
             android:layout_marginTop="4dp"
             android:textColor="@color/black"
             android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
             app:layout_constraintStart_toStartOf="@id/tvName"
             app:layout_constraintEnd_toEndOf="@id/tvName"
             app:layout_constraintTop_toBottomOf="@id/tvDistance" />
@@ -63,6 +66,7 @@
             android:background="@drawable/bg_rating"
             android:textColor="@android:color/white"
             android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"
             app:layout_constraintTop_toTopOf="@id/img"
             app:layout_constraintBottom_toBottomOf="@id/img"
             app:layout_constraintEnd_toEndOf="parent" />

@@ -16,7 +16,7 @@ class RestaurantViewModel(private val repository: RestaurantRepository) : ViewMo
 
     fun setRadius(r: Int) {
         LogUtils.showLog("Radius", "setRadius: $r")
-        _state.value = _state.value?.copy(radius = r.coerceIn(500, 5000))
+        _state.value = _state.value?.copy(radius = r.coerceIn(100, 5000))
     }
 
     fun setLocation(lat: Double?, lng: Double?, useCoords: Boolean) {

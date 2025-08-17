@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     private lateinit var findNearbyRestaurantsAdapter : FindNearbyRestaurantsAdapter
 
-    private val API_KEY = "ZOE9c5S19iMlTt2kBa8nkVuRnya7pTfw9d2srzeyWnceY9_HdEB7eVBg6Rgelcm1lWGkejFWTL_n_R_W1rdLIYwEdIQGsfuFX3knVMAFaog7AvhLGKerIZWhVQOeaHYx"
+    private val API_KEY = ""// Please add your API Key here to run the app
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -195,11 +195,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @RequiresPermission(allOf = [Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION])
+    @RequiresPermission(allOf = [Manifest.permission.ACCESS_FINE_LOCATION,
+        Manifest.permission.ACCESS_COARSE_LOCATION])
     private fun getCurrentLocationAndRefresh() {
-        fusedLocationProviderClient.lastLocation.addOnSuccessListener { loc ->
-            if (loc != null) {
-                viewModel.setLocation(loc.latitude, loc.longitude, useCoords = true)
+        fusedLocationProviderClient.lastLocation.addOnSuccessListener { location ->
+            if (location != null) {
+                viewModel.setLocation(location.latitude, location.longitude, useCoords = true)
             } else {
                 viewModel.setLocation(null, null, useCoords = false) // fallback to NYC
             }

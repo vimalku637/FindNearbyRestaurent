@@ -36,6 +36,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
@@ -48,6 +49,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
+                    android:fontFamily="@font/roboto_bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBaseline_toBaselineOf="@id/tvRadiusSelector"/>
 
@@ -72,6 +74,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/_100_m"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/seekRadius"/>
 
@@ -83,6 +86,7 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/_5_km"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBaseline_toBaselineOf="@id/tvStartingRadius100M"/>
 
